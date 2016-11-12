@@ -1,0 +1,29 @@
+<f:layout name="Rahmen" />
+
+<f:section name="content">
+
+  <f:render partial="textBox" arguments=""
+
+  <!--
+
+    Parameter:
+    positon: left, right
+    backgroundpicture: Dateinamen + Endung
+    alt: Alternativtext für das Bild
+    likToPageId: Seiten ID auf die gelinkt wird
+    head: Überschrift/Kategorie
+    services: Dienstleistungen der Kategorie
+
+   -->
+
+  <f:render partial="clusterBox" arguments="{positon:'first', backgroundpicture:'flyer-printing.jpg', alt:'Flyerverteilung',
+                                            likToPageId:'50', head:'Flyer', services:{0:'Haushaltswebung', 1:'Hand zu Hand',
+                                            2:'Auslagestellenverteilung', 3:'Mailings'}}" />
+  <f:render partial="clusterBox" arguments="{positon:'', backgroundpicture:'flyer-printing.jpg', alt:'Plakatierung',
+                                            likToPageId:'51', head:'Plakat', services:{0:'Tafelplakatierung',
+                                            1:'Flächenplakatierung', 2:'Litfasssäulenplakatierung',  3:'Großflächenplakatierung',
+                                            4:'Indoorplaktierung', 5:'Verkehrsmittelwerbung'}}" />
+  <f:render partial="clusterBox" arguments="{positon:'last', backgroundpicture:'flyer-printing.jpg', alt:'Druck',
+                                            likToPageId:'52', head:'Druck', services:{0:'Grafik und Layout', 1:'Textgestaltung',
+                                            2:'Lektorat', 3:'Desktop-Publishing', 4:'Erstellung von Druckvorlagen'}}" />
+</f:section>

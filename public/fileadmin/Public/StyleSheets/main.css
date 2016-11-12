@@ -1,0 +1,54 @@
+/*
+* Basics
+*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* Navigation
+*/
+* {
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbar-content {
+ text-align:center;
+ background: #c2d4d8;
+}
+
+ul#navbar-content .navbar-content--link {
+ display:inline-block;
+ background-color: #c2d4d8;;
+ color:#fff;
+ margin-left:-3px;
+ margin-bottom:1px;
+}
+
+#navbar-content a {
+ display:block;
+ padding:10px;
+ color: #2a2828;
+ //text-transform: uppercase;
+ text-transform: lowercase;
+ font-weight: bold;
+ line-height: 50px;
+}
+
+#navbar-content a:hover {
+ background:#2a2828;
+ color: white;
+}
+
+.content {
+  margin: 0 120px 0 120px;
+}
+
+.textBox, .videoBox {
+  margin-top: 20px;
+}

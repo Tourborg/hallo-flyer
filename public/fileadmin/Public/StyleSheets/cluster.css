@@ -1,0 +1,79 @@
+img.clusterBox--image {
+    width: 100%;
+}
+
+.clusterBox {
+  width: 33%;
+  float: left;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.clusterBox-services {
+  width: 49.7%;
+  float: left;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.first { margin-right: 0.5%; }
+.last { margin-left: 0.5%; }
+
+footer {
+    margin-top: 10px;
+}
+
+.is--wide {
+  width:100%;
+  height: 550px;
+}
+
+
+.cluster-info {
+  background: #c2d4d8; scroll 0 0;
+  bottom: 0;
+  display: block;
+  font-size: 20px;
+  height: 70px;
+  position: absolute;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+  width: 100%;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.clusterBox:hover .cluster-info { height: 100%; opacity: 0.9; }
+.clusterBox:active .cluster-info { height: 100%; opacity: 0.9; }
+.clusterBox:focus .cluster-info { height: 100%; opacity: 0.9; }
+
+.clusterBox-services:hover .cluster-info { height: 100%; opacity: 0.9; }
+.clusterBox-services:active .cluster-info { height: 100%; opacity: 0.9; }
+.clusterBox-services:focus .cluster-info { height: 100%; opacity: 0.9; }
+
+.services {
+  text-align: left;
+  padding-left: 15px;
+  margin: 15px;
+}
+
+.services li a { color: white; }
+
+.cluster-info p {
+  line-height: 70px;
+  font-size: 30px;
+}
+
+p.cluster-description {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 30px 30px 30px;
+}

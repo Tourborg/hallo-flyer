@@ -1,0 +1,24 @@
+<f:layout name="Rahmen" />
+
+<f:section name="content">
+
+  <f:render partial="textBox" arguments="{header:'Willkommen', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                          sunt in culpa qui officia deserunt mollit anim id est laborum.'}" />
+
+  <f:render partial="videoBox" arguments="{videoURL:'https://www.youtube-nocookie.com/embed/uwYxOVgX2CA?rel=0&amp;controls=0&amp;showinfo=0'}"/>
+
+  <f:render partial="clusterBox" arguments="{positon:'first', backgroundpicture:'flyer-printing.jpg', alt:'Flyerverteilung',
+                                            likToPageId:'50', head:'Flyer', services:{0:'Haushaltswebung', 1:'Hand zu Hand',
+                                            2:'Auslagestellenverteilung', 3:'Mailings'}}" />
+  <f:render partial="clusterBox" arguments="{positon:'', backgroundpicture:'flyer-printing.jpg', alt:'Plakatierung',
+                                            likToPageId:'51', head:'Plakat', services:{0:'Tafelplakatierung',
+                                            1:'Flächenplakatierung', 2:'Litfasssäulenplakatierung',  3:'Großflächenplakatierung',
+                                            4:'Indoorplaktierung', 5:'Verkehrsmittelwerbung'}}" />
+  <f:render partial="clusterBox" arguments="{positon:'last', backgroundpicture:'flyer-printing.jpg', alt:'Druck',
+                                            likToPageId:'52', head:'Druck', services:{0:'Grafik und Layout', 1:'Textgestaltung',
+                                            2:'Lektorat', 3:'Desktop-Publishing', 4:'Erstellung von Druckvorlagen'}}" />
+</f:section>

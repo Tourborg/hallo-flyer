@@ -1,0 +1,28 @@
+<!--
+
+  Cluster-Elemente
+
+  Parameter:
+  positon: left, right
+  backgroundpicture: Dateinamen + Endung
+  alt: Alternativtext für das Bild
+  likToPageId: Seiten ID auf die gelinkt wird
+  head: Überschrift/Kategorie
+  services: Dienstleistungen der Kategorie
+
+ -->
+
+<div class="clusterBox {positon}">
+  <img class="clusterBox--image" src="fileadmin/user_upload/{backgroundpicture}" alt={alt}>
+  <span class="cluster-info">
+    <f:link.page pageUid="{likToPageId}">
+      <p>{head}</p>
+      <ul class="services">
+        <f:for each="{services}" as="service">
+          <li>{service}</li>
+        <tr>
+        </f:for>
+      </ul>
+    </f:link.page>
+  </span>
+</div>
